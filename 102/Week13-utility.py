@@ -60,3 +60,11 @@ def union(list1, list2):
             new_list.append(item)
     return new_list
 
+def intersect(list1, list2):
+    new_list = []
+    for item in list1:
+        if item in list2:
+            new_list.append(item)
+    return new_list
+
+
