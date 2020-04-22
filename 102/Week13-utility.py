@@ -36,3 +36,17 @@ def find_word_count(list1, string):
                 word = ''
     return total
 
+def score_finder(players, scores, player):
+    player_found = False
+    i = 0
+    while i < len(players):
+        if players[i].lower() == player.lower():
+            index = i
+            player_found = True
+            break
+        i += 1
+    if player_found:
+        print(players[index], "got a score of", scores[index])
+    elif not player_found:
+        print("OUTPUT player not found")
+
