@@ -50,3 +50,13 @@ def score_finder(players, scores, player):
     elif not player_found:
         print("OUTPUT player not found")
 
+def union(list1, list2):
+    new_list = []
+    for item in list1:
+        if item not in new_list:
+            new_list.append(item)
+    for item in list2:
+        if item not in new_list:
+            new_list.append(item)
+    return new_list
+
