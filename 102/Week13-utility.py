@@ -67,4 +67,10 @@ def intersect(list1, list2):
             new_list.append(item)
     return new_list
 
-
+def not_in(list1, list2):
+    new_list = []
+    for item in list1:
+        if item not in list2:
+            new_list.append(item)
+    return new_list
+    
