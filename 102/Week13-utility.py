@@ -14,3 +14,9 @@ def load_file(filename):
             output_list = output_list.append(line)
         return output_list
 
+def update_string(string, char, i):
+    string = list(string)
+    string[i] = char
+    string = ''.join(string)
+    print("OUTPUT", string)
+
